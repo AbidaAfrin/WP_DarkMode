@@ -1,8 +1,8 @@
 package pages;
 
-import net.bytebuddy.implementation.bind.MethodDelegationBinder;
+
 import org.openqa.selenium.By;
-import org.testng.annotations.BeforeMethod;
+
 
 public class Plugins extends BasePage{
     HomePageWordPress homePageWordPress = new HomePageWordPress();
@@ -12,9 +12,7 @@ public class Plugins extends BasePage{
     public String plugins_name = "WP Dark Mode";
     public By installWPDarkModeButton = By.xpath("//a[@aria-label='Install WP Dark Mode – WordPress Dark Mode Plugin for Improved Accessibility, Dark Theme, Night Mode, and Social Sharing 5.1.0 now']");
     public By activateWPDarkModeButton = By.xpath("//a[text()='Activate']");
-   // public By dark_mode_plugin = By.xpath("//strong[text()='WooCommerce']");
     public By dark_mode_plugin = By.xpath("//tr[contains(@class, 'active') and contains(., 'WP Dark Mode')]");
-  //  public By WooCommerce = By.xpath("//tr[contains(@class, 'active') and contains(., 'WooCommerce')]");
     public By addNewPlugInButton = By.xpath("//a[@href='plugin-install.php']");
     public By scrollDown = By.cssSelector("table[class='wp-list-table widefat plugins'] tfoot tr");
 
@@ -25,16 +23,11 @@ public class Plugins extends BasePage{
 
     public void clickOnPlugins(){
 
-        homePageWordPress.hover(homePageWordPress.myWordPress);
+     //   homePageWordPress.hover(homePageWordPress.myWordPress);
         homePageWordPress.clickOnElement((homePageWordPress.plugins));
 
     }
 
-
-//
-//            clickOnElement(searchIcon);
-//            clickOnElement(writerName);
-//        }
 
         //Check if "WP Dark Mode" plugin is active
     public void checkWPDarkModePluginStatus(){

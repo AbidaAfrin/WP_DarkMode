@@ -18,7 +18,7 @@ public class TestLogInWordPress extends BrowserSetup {
     @BeforeMethod
     public void loadSignInPage() {
         getBrowser().get(homePageWordPress.url);
-        homePageWordPress.clickOnElement(homePageWordPress.logInButton);
+      //  homePageWordPress.clickOnElement(homePageWordPress.logInButton);
     }
 
 

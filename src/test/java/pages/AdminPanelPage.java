@@ -7,7 +7,8 @@ public class AdminPanelPage extends BasePage{
     HomePageWordPress homePageWordPress = new HomePageWordPress();
 
     public By wPDarkModePlugin = By.xpath("//div[contains(text(),'WP Dark Mode')]");
-    public By settingButton = By.xpath("//a[@class='wp-first-item wp-dark-mode-ignore'][text()='Settings']");
+  //  public By settingButton = By.xpath("//a[@class='wp-first-item wp-dark-mode-ignore'][text()='Settings']");
+  public By settingButton = By.xpath("//a[@href='admin.php?page=wp-dark-mode'][text()='Settings']");
 
     public By adminPanelDarkMode = By.xpath("//a[text()='Admin Panel Dark Mode']");
    // public By enableDarkModeButton = By.cssSelector("div[class='rounded text-base flex flex-col gap-3 bg-transparent gap-5'] div:nth-child(1) label:nth-child(1) div:nth-child(1) div:nth-child(1)");
