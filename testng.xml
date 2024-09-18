@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/SQA/Maven Project/WP_DarkMode/src/test/java/testcases">
+        <classes>
+            <class name="testcases.TestLogInWordPress">
+                <methods>
+                    <include name="testLoginWithValidCredentials"/>
+                </methods>
+            </class>
+            <class name="testcases.TestActivateWPDarkModePlugin">
+                <methods>
+                    <include name="testCheckWPDarkModeStatus"/>
+                </methods>
+            </class>
+            <class name="testcases.TestAdminPanelDarkModeActivation">
+                <methods>
+                    <include name="testAdminPanelDarkMode"/>
+                </methods>
+            </class>
+            <class name="testcases.TestCustomization">
+                <methods>
+                    <include name="testFloatingSwitchSettings"/>
+                    <include name="testFloatingSwitchSize"/>
+                    <include name="testSwitchPosition"/>
+                    <include name="testAccessibilitySettings"/>
+                    <include name="testSiteAnimationSettings"/>
+                </methods>
+            </class>
+            <class name="testcases.TestDarkModeValidation">
+                <methods>
+                    <include name="testDarkMode"/>
+                </methods>
+            </class>
+
+
+        </classes>
+    </test>
+</suite>
