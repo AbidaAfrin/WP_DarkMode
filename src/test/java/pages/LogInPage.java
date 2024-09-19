@@ -9,7 +9,7 @@ public class LogInPage extends BasePage{
     public String username =dotenv.get("username");
     public String password =dotenv.get("password");
 
-    
+
 
     public By usernameInputBox = By.id("user_login");
     public By passwordInputBox = By.id("user_pass");
