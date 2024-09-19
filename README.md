@@ -24,9 +24,12 @@ To install wordpress  [Watch the video](https://www.youtube.com/watch?v=usoJ6ckz
 * Check if the "WP Dark Mode" plugin is active, and install/activate it if needed.
 * Enable Admin Dashboard Dark Mode (from Controls → Admin Panel Dark Mode.)
 * Validate dark mode on the admin dashboard.
-* Change Floating Switch settings and customize the appearance.
+* Navigate to the WP Dark Mode.
+* Change Floating Switch Style settings:From Customization → Switch Settings → Change the “Floating Switch Style” from the default selections (Select any one from the available options, except the default selected one).
+* Change Switch Size: From Customization → Switch Settings → Switch Customization - Select Custom Switch size & Scale it to 220.
+* Change Floating Switch Position: From Customization → Switch Settings - Change the Floating Switch Position (Left).
 * Disable the keyboard shortcut for dark mode.
-* Enable page transition animation and verify it.
+* Enable page transition animation and change the animation effect: From Customization → Site Animation → “Enable Page-Transition Animation” & change the Animation Effect from the default selections.
 * Validate dark mode on the frontend.
  
 ## Steps to Implement the Test Suite:
