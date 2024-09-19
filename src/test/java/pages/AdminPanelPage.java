@@ -17,8 +17,10 @@ public class AdminPanelPage extends BasePage{
     public By saveChangesButton = By.xpath("//button[text()='Save Changes']");
     public By lightDarkIcon = By.xpath("//div[@class='switch wp-dark-mode-ignore']");
 
+    public By body = By.tagName("body");
+    public By darkModeToggle = By.cssSelector("._track.wp-dark-mode-ignore");
 
-
+// To enable dark mode
     public void enableDarkMode()  {
 
         hover(wPDarkModePlugin);
@@ -30,8 +32,19 @@ public class AdminPanelPage extends BasePage{
         clickOnElement(saveChangesButton);
 
     }
-
+// Toggle dark mode
     public void navigateDarkMode(){
-        clickOnElement(lightDarkIcon);
+        clickOnElement(darkModeToggle);
+    }
+
+
+    public void darkMode() {
+        // Click to toggle dark mode
+        clickOnElement(darkModeToggle);
+    }
+
+    public String getBackgroundColor() {
+        // Retrieve the background color after toggling dark mode
+        return getElement(body).getCssValue("background-color");
     }
 }

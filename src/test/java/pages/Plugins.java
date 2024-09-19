@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 public class Plugins extends BasePage{
     HomePageWordPress homePageWordPress = new HomePageWordPress();
 
-    public String url="http://localhost/mywordpress/wp-admin/plugins.php?plugin_status=all&paged=1&s";
+  //  public String url="http://localhost/mywordpress/wp-admin/plugins.php?plugin_status=all&paged=1&s";
     public By searchBox = By.id("search-plugins");
     public String plugins_name = "WP Dark Mode";
     public By installWPDarkModeButton = By.xpath("//a[@aria-label='Install WP Dark Mode – WordPress Dark Mode Plugin for Improved Accessibility, Dark Theme, Night Mode, and Social Sharing 5.1.0 now']");
@@ -47,17 +47,18 @@ public class Plugins extends BasePage{
 
     }
 
+    //search WP Dark Mode plugin
     public void searchPlugins(){
         clickOnElement(addNewPlugInButton);
         clickOnElement(searchBox);
         sendText(searchBox,plugins_name);
     }
-
+    //install WP DarkMode Plugin
     public void installWPDarkModePlugIn(){
         clickOnElement(installWPDarkModeButton);
 
     }
-
+    // Activate plugin
     public void activateWPDarkModePlugIn(){
         waitForVisibility(activateWPDarkModeButton);
         clickOnElement(activateWPDarkModeButton);

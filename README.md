@@ -22,7 +22,7 @@ To install wordpress  [Watch the video](https://www.youtube.com/watch?v=usoJ6ckz
 ## Test Cases Covered
 * Log in to WordPress.
 * Check if the "WP Dark Mode" plugin is active, and install/activate it if needed.
-* Enable Admin Dashboard Dark Mode.
+* Enable Admin Dashboard Dark Mode (from Controls → Admin Panel Dark Mode.)
 * Validate dark mode on the admin dashboard.
 * Change Floating Switch settings and customize the appearance.
 * Disable the keyboard shortcut for dark mode.

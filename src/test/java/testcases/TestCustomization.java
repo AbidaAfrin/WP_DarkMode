@@ -16,26 +16,26 @@ public class TestCustomization extends BrowserSetup {
 
     @Test
 
-    public void testFloatingSwitchSize() throws InterruptedException {
+    public void testFloatingSwitchSize()  {
     customizationPage.customSwitchSize();
     customizationPage.addScreenshot("Selecting Custom Switch size & Scale it to 220");
     }
 
     @Test
 
-    public void testSwitchPosition() throws InterruptedException {
+    public void testSwitchPosition()  {
     customizationPage.customSwitchPosition();
     customizationPage.addScreenshot("Change the Floating Switch Position (Left).");
     }
 
 
     @Test
-    public void testAccessibilitySettings() throws InterruptedException {
+    public void testAccessibilitySettings()  {
     customizationPage.accessibilitySettings();
     customizationPage.addScreenshot("Disable the Keyboard Shortcut from the Accessibility Settings");
     }
 @Test
-    public void testSiteAnimationSettings() throws InterruptedException {
+    public void testSiteAnimationSettings() {
     customizationPage.siteAnimationSettings();
     customizationPage.addScreenshot("change the Animation Effect from the default selection");
 }

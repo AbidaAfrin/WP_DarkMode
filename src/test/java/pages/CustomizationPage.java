@@ -31,7 +31,7 @@ public class CustomizationPage extends BasePage{
 
 
 
-
+// Change switch style
     public void customizeSwitchStyles(){
         clickOnElement(customizationButton);
         clickOnElement(switchSettings);
@@ -39,7 +39,7 @@ public class CustomizationPage extends BasePage{
         clickOnElement(floatingSwitchStyle);
         clickOnElement(saveChangesButton1);
     }
-
+// change switch size
     public void customSwitchSize() {
 //        clickOnElement(customizationButton);
 //        clickOnElement(switchSettings);
@@ -54,72 +54,59 @@ public class CustomizationPage extends BasePage{
      //   Thread.sleep(2000);
 
     }
-
-    public void customSwitchPosition() throws InterruptedException {
+// change switch position
+    public void customSwitchPosition()  {
 //        clickOnElement(customizationButton);
 //        clickOnElement(switchSettings);
       //  scroll(scrollDown3);
-        Thread.sleep(2000);
-        clickOnElement(switchPositionLeft);
-      Thread.sleep(2000);
-        clickOnElement(saveChangesButton1);
-       Thread.sleep(2000);
-
-    }
-
-    public void accessibilitySettings() throws InterruptedException {
-        scroll(scrollDown3);
-       Thread.sleep(2000);
-        clickOnElement(accessibility);
-       Thread.sleep(2000);
-      scroll(scrollDown4);
-        clickOnElement(keyboardShortcut);
-     Thread.sleep(2000);
-        clickOnElement(saveChangesButton1);
-       Thread.sleep(2000);
-
-
-    }
-
-
-    public void siteAnimationSettings() throws InterruptedException {
-//        clickOnElement(customizationButton);
-      //  scroll(siteAnimation);
        // Thread.sleep(2000);
+        scroll(switchAnimationEffect);
+        clickOnElement(switchPositionLeft);
+     // Thread.sleep(2000);
+        clickOnElement(saveChangesButton1);
+     //  Thread.sleep(2000);
+
+    }
+//Keyboard Shortcut from the Accessibility Settings
+    public void accessibilitySettings() {
+        scroll(scrollDown3);
+        clickOnElement(accessibility);
+        scroll(scrollDown4);
+        clickOnElement(keyboardShortcut);
+        clickOnElement(saveChangesButton1);
+
+
+
+    }
+
+// From Customization → Site Animation → “Enable Page-Transition Animation”
+// & change the Animation Effect from the default selections.
+    public void siteAnimationSettings()  {
+
         clickOnElement(siteAnimation);
-        System.out.println("clickOnElement:siteAnimation");
-        Thread.sleep(2000);
+        System.out.println("Click:siteAnimation");
         scrollUp();
         System.out.println("scrollUp");
-        Thread.sleep(2000);
         clickOnElement(enableAnimation);
-        System.out.println("clickOnElement:enableAnimation");
-        Thread.sleep(2000);
-       // scroll(animationFlip);
-       // System.out.println("scroll:animationFlip");
+        System.out.println("Click:enableAnimation");
         clickOnElement(animationPlus);
-        System.out.println("clickOnElement:animationFlip");
-        Thread.sleep(2000);
+        System.out.println("Click:animationPlus");
         clickOnElement(saveChangesButton1);
-        System.out.println("clickOnElement:saveChangesButton1");
-        Thread.sleep(2000);
+        System.out.println("Click:saveChangesButton1");
         scroll(scrollDown5);
-        System.out.println("clickOnElement:scrollDown5");
-        Thread.sleep(2000);
+        System.out.println("scrollDown5");
         clickOnElement(switchAnimationEffectLink);
-        System.out.println("clickOnElement:switchAnimationEffectLink");
-        Thread.sleep(2000);
+        System.out.println("Click:switchAnimationEffectLink");
+        scroll(switchAnimationEffect);
         clickOnElement(switchAnimationEffect);
-        System.out.println("clickOnElement:switchAnimationEffect");
-        Thread.sleep(2000);
+        System.out.println("Click:switchAnimationEffect");
         clickOnElement(saveChangesButton1);
-        System.out.println("clickOnElement:saveChangesButton1");
-        Thread.sleep(2000);
+        System.out.println("Click:saveChangesButton1");
         clickOnElement(vibrateEffect);
-        System.out.println("clickOnElement:vibrateEffect");
-        Thread.sleep(2000);
+        System.out.println("Click:vibrateEffect");
         clickOnElement(saveChangesButton1);
-        System.out.println("clickOnElement:saveChangesButton1");
+        System.out.println("Click:saveChangesButton1");
+
 
 
     }

@@ -20,11 +20,7 @@ public class TestActivateWPDarkModePlugin extends BrowserSetup {
        plugins.clickOnPlugins();
        plugins.addScreenshot("After clicking plugins button");
 
-       plugins.checkWPDarkModePluginStatus();
-
-
-
-
+       plugins.checkWPDarkModePluginStatus(); //Check if "WP Dark Mode" plugin is active,if not install & activate
 
     }
 

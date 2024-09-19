@@ -16,6 +16,8 @@
             <class name="testcases.TestAdminPanelDarkModeActivation">
                 <methods>
                     <include name="testAdminPanelDarkMode"/>
+                    <include name="testDarkModeValidationFromAdminDashboard"/>
+                    <include name="testNavigateDarkMode"/>
                 </methods>
             </class>
             <class name="testcases.TestCustomization">
@@ -27,9 +29,9 @@
                     <include name="testSiteAnimationSettings"/>
                 </methods>
             </class>
-            <class name="testcases.TestDarkModeValidation">
+            <class name="testcases.TestDarkModeValidationFrontEnd">
                 <methods>
-                    <include name="testDarkMode"/>
+                    <include name="testDarkModeFrontEnd"/>
                 </methods>
             </class>
 
